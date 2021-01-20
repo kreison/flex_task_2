@@ -1,0 +1,331 @@
+@font-face{
+    font-family: FjallaOne; /* Имя шрифта */
+    src: url(fonts/FjallaOne-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: SourceSansPro; /* Имя шрифта */
+    src: url(fonts/SourceSansPro-Light.ttf); /* Путь к файлу со шрифтом */
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+}
+.bg-head{
+    width: 100%;
+    height: 603px;
+    background: url(images/bg.png) center no-repeat;
+    background-size: cover;
+
+}
+.container-head{
+    width: 1250px;
+    height: 2775px;
+    margin: 0 auto;
+}
+.container-head header{
+    width: 1250px;
+    height: 79px;
+    background-color: #29606b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-head header p{
+    font-family: FjallaOne;
+    font-size: 26px;
+    color: #ffffff;
+    margin: 0;
+}
+.container-head header ul{
+    display: inline-flex;
+    width: 500px;
+    margin: 0;
+    justify-content: space-between
+}
+.container-head header ul li{
+    list-style: none;
+}
+.container-head header ul li a{
+    font-family: FjallaOne;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container-head .zagalovok{
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container-head .zagalovok h1{
+    font-family: FjallaOne;
+    font-size: 41px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.container-head .zagalovok p{
+    font-family: FjallaOne;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.container-head .zagalovok a{
+    background: #29606b;
+    padding: 17px 55px ;
+    border: 3px solid #fff;
+    position: relative;
+    font-family: FjallaOne;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container-head .zagalovok a::after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #29606b;
+    border-bottom: 3px solid #fff;border-right: 3px solid #fff;
+    position: absolute;
+    bottom: -14px;
+    right: 42%;
+    transform: rotate(45deg);
+}
+.bg-body{
+    width: 100%;
+    height: 2175px;
+    background: #29606b;
+}
+.container-body{
+    width: 1250px;
+    height: 2075px;
+    margin: 0 auto;
+}
+.container-body .achivment{
+    position: relative;
+    bottom: 75px;
+    width: 1249px;
+    height: 756px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container-body .achivment .item-block{
+    width: 625px;
+    height: 378px;
+    background: #e84c3d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-body .achivment .item-block:nth-child(1){
+    background: #e84c3d;
+    order: 1;
+}
+.container-body .achivment .item-block:nth-child(2){
+    background: #1bbc9b;
+    order: 3;
+}
+.container-body .achivment .item-block:nth-child(3){
+    background: #fdbd1f;
+    order: 2;
+}
+.container-body .achivment .item-block:nth-child(4){
+    background: #9b58b5;
+    order: 4;
+}
+.container-body .achivment .item-block img{
+    z-index: 10;
+}
+.container-body .achivment .item-block::before{
+    content: "";
+    border: 50px solid #fff;
+    border-radius: 100px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+.container-body .achivment .item-block .vest{
+    font-family: FjallaOne;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.container-body .achivment .item-block p{
+    width: 400px;
+    font-family: SourceSansPro;
+    font-size: 16px;
+    color: #ffffff;
+}
+.container-body .tempor{
+    width: 1250px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+}
+.container-body .tempor .tempor-p{
+    font-family: FjallaOne;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container-body .tempor p{
+    font-family: FjallaOne;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+.container-body .comments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-body .comment-item{
+    width: 400px;
+    height: 480px;
+    background-color: #245963;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-body .comment-item:nth-child(1){
+    border-top: 6px solid #e84c3d;
+}
+.container-body .comment-item:nth-child(2){
+    border-top: 6px solid #fdbd1f;
+}
+.container-body .comment-item:nth-child(3){
+    border-top: 6px solid #1bbc9b;
+}
+.container-body .comments .comment-item p{
+    font-family: SourceSansPro;
+    font-size: 17px;
+    line-height: 26px;
+    color: #76b2be;
+    width: 360px;
+    margin-bottom: 30px;
+}
+.container-body .comments .comment-item a{
+    padding: 10px 20px;
+    background: #e84c3d;
+    font-family: FjallaOne;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+.container-body .comments .comment-item a::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #e84c3d;
+    position: absolute;
+    bottom: -10px;
+    right: 42%;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.container-body .connect{
+    width: 570px;
+    height: 529px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.container-body .connect .connect-head p{
+    font-family: FjallaOne;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 390px;
+    height: 30px;
+}
+.container-body .connect .connect-head .vivamus{
+    font-family: FjallaOne;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 30px;
+}
+.container-body .connect form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+}
+.container-body .connect form #a1, #a2{
+    width: 275px;
+    height: 46px;
+    background-color: #245963;
+    border: 1px solid #387d89;
+    outline: none;
+}
+.container-body .connect form #a3{
+    width: 570px;
+    height: 126px;
+    background-color: #245963;
+    border: 1px solid #387d89;
+    outline: none;
+}
+.container-body .connect form #a4{
+    width: 102px;
+    height: 37px;
+    background-color: #245963;
+    border: 1px solid #387d89;
+    outline: none;
+}
+.bg-body header{
+    width: 100%;
+    height: 200px;
+    background-color: #245963;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.bg-body header .head{
+    width: 370px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bg-body header .head p{
+    font-family: SourceSansPro;
+    font-size: 15px;
+    color: #ffffff;
+}
+.bg-body header .foot{
+    width: 897px;
+    height: 46px;
+}
+.bg-body header .foot p{
+    font-family: SourceSansPro;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.bg-body header .foot a{
+    color: #fdbd1f;
+    text-decoration: none;
+}
